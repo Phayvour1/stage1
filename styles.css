@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.main-content .goal {
+    margin-bottom: 20px;
+}
+
+.main-content .goal h2 {
+    color: #0056b3;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.main-content .goal p {
+    font-size: 1.2em;
+}
+
+.slack-info {
+    margin-bottom: 20px;
+}
+
+.slack-info img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #0056b3;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    .main-content .goal h2 {
+        font-size: 1.5em;
+    }
+    .main-content .goal p {
+        font-size: 1em;
+    }
+    .slack-info img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .header h1 {
+        font-size: 1.5em;
+    }
+    .main-content .goal h2 {
+        font-size: 1.2em;
+    }
+    .main-content .goal p {
+        font-size: 0.9em;
+    }
+    .footer {
+        font-size: 0.9em;
+    }
+}
