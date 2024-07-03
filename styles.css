@@ -7,44 +7,72 @@
 body {
     font-family: 'Arial, sans-serif';
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #818589;
     color: #333;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
+    
+    margin: 40px;
+    padding: 0px 100px;
+    background: #D3D3D3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 5px;
+   
+    
 }
-
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.header h1 {
-    font-size: 2.5em;
-}
-
-.main-content .goal {
-    margin-bottom: 20px;
-}
-
-.main-content .goal h2 {
-    color: #0056b3;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.main-content .goal p {
-    font-size: 1.2em;
-}
+.slackinfo{
+    font-family: "poppins";
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}i
 
 .slack-info {
+    margin: 50px;
+    align-items: center;
+    font-size: 19px;
+    
+}
+.nameandpic{
+    display:flex ;
+    justify-content: center;
+    padding:10px 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.name{
+    background-color: #808080;
+    padding: 15%;
+    
+    border-radius: 5px 0px 0px 5px;
+  
+}
+
+.name:hover{
+    font-size: 20px;
+    color:#fff;
+}
+.Picture{
+    background-color: #818589;
+    padding: 10%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.time{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
     margin-bottom: 20px;
+}
+.time:hover{
+    font-size: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .slack-info img {
@@ -52,49 +80,106 @@ body {
     border-radius: 50%;
     margin-bottom: 10px;
 }
+.goalsinfo h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: poppins;
+}
+.goals{
+    font-size: 20px;
+    color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    padding-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.goals:hover{
+    color:#808062
+}
+.links h3{
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
 
+.links a{
+    text-decoration-line: none;
+    color: #808080;
+    font-family: poppins;
+    padding: 10px;
+    margin: 15px;
+
+}
+
+a:hover{
+color: bisque;
+font-family: Verdana, Tahoma, sans-serif;
+background: beige;
+background-color: #808080;
+border-radius: 20px;
+}
 .footer {
     text-align: center;
     padding: 10px 0;
-    background: #0056b3;
-    color: #fff;
-    border-radius: 0 0 8px 8px;
+    
 }
-
+ 
 .footer p {
     margin: 0;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
-    .main-content .goal h2 {
-        font-size: 1.5em;
-    }
-    .main-content .goal p {
-        font-size: 1em;
-    }
-    .slack-info img {
-        max-width: 100px;
-    }
-}
-
 @media (max-width: 480px) {
-    .container {
+    .container{
         padding: 10px;
     }
-    .header h1 {
-        font-size: 1.5em;
+    .slackinfo{
+        font-size: medium;
+        text-align: center;
     }
-    .main-content .goal h2 {
-        font-size: 1.2em;
+    .nameandpic{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        justify-content: center;
+        align-items: center;
+
+       font-size: small;
+       
+
     }
-    .main-content .goal p {
-        font-size: 0.9em;
+    .name{
+        
+        display: flex;
+        flex-direction: column;
+        padding-left: 120px;
+        background-color: transparent;
+        text-align: center;
     }
-    .footer {
-        font-size: 0.9em;
+    .Picture{
+      background-color: transparent;
+      padding-left: 110px;
+    }
+    .time{
+
+        font-size: small;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2px;
+        text-align: center;
+    }
+    .goalsinfo h1{
+        font-size: medium;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .links a{
+        font-size: 10px;
+        text-align: center;
     }
 }

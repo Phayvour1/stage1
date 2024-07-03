@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function updateTimeAndDay() {
         const now = new Date();
-        now.setHours(now.getUTCHours() + 1); // Add 1 hour to UTC time to get UTC+1
+       
 
         const options = { weekday: 'long' };
         
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Display current time and day
         currentTimeElement.textContent = `${timeString} UTC+1`;
-        currentDayElement.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
+        currentDayElement.textContent = new Intl.DateTimeFormat('en-GB', options).format(now);
     }
 
     updateTimeAndDay();
